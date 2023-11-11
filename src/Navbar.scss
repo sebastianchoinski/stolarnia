@@ -1,0 +1,44 @@
+.main-navbar-div {
+    background-color: #f5f5f5; /* A light, neutral background */
+    padding: 10px 20px; /* Some padding around the navbar */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* A subtle shadow for depth */
+    text-align: center; /* Center align the navigation links */
+}
+
+.nav-links {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    display: inline-flex; /* Display links in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.nav-link {
+    margin: 0 15px; /* Spacing between each link */
+}
+
+.nav-link a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark color for the text */
+ /* Make the font bold */
+    font-size: 22px; /* Set a standard font size */
+    transition: color 0.7s ease; /* Smooth transition for hover effect */
+}
+
+.nav-link a:hover {
+    color: rgb(133, 83, 17); /* Change color on hover */
+    border-bottom: 1px solid #7f8c8d; /* Add a bottom border on hover */
+    padding-bottom: 5px; /* Space between text and border */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Stack the links vertically on small screens */
+    }
+
+    .nav-link {
+        margin: 10px 0; /* Adjust spacing for stacked layout */
+    }
+}
