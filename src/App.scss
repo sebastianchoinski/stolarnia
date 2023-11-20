@@ -1,0 +1,7 @@
+@use 'Library';
+Html, body 
+{
+    background-color: Library.$color1;
+    max-width: 100%;
+    overflow-x: hidden;
+ }

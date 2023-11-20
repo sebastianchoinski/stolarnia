@@ -21,13 +21,18 @@ export default function Topbar(props) {
 
     return (
         <div>
+          <Navbar></Navbar>
             <div className='photo-container'><img
             src={data.topPhotos[0].image.url}
             className='main-page-top-photo'
-            ></img><p className='photo-text-title'>MANUFAKTURA STOLAR
+            ></img><p className='photo-text-title'>TWORZYMY <br/>
+            z PASJĄ <br/>
+            SZAFY, PODŁOGI i INNE
             </p>
+            <a className='about-link' href='/about'>
+              <div className='about'><p className='about-text'>Przeczytaj o nas!</p></div>
+            </a>
             </div>
-            <Navbar></Navbar>
         </div>
     );
 }

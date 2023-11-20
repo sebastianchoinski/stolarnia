@@ -11,10 +11,15 @@ export default function MainPage(props) {
     
     return (
         
-        <div>
+        <div className='main-page-div'>
+            <div className='phototext'>
             <PhotoText></PhotoText>
+            </div>
+            
             <hr className='main-page-hr'></hr>
+            <div className='praises'>
             <Praises></Praises>
+            </div>
         </div>
     );
 }
