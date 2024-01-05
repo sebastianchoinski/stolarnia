@@ -1,50 +1,79 @@
 @use 'Library';
-.main-navbar-div {
+.mainnavbardiv {
     z-index: 5;
-    padding-top: 10px;
+    padding-top: 15px;
     position: fixed;
     width: 100%;
     overflow: hidden; /* Clears floats */
-    padding-bottom: 10px;;
-    background-color: rgba(Library.$color1,0.1);
+    padding-bottom: 15px;;
+    background-color: white;
+    display: flex;
+    
     
 }
+.wycena{
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 2px solid rgb(71, 8, 8);
+    color: rgb(71, 8, 8);   
+    margin-left: 80px;
+    font-family: Library.$number-font;
+    font-weight: 600;
+}
 
-.nav-links {
+
+.phonenumber{
+    color: white;
+    background-color: #3a3a3a;
+    height: 50px;
+    float: right;
+    margin-right: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.phonenumber a{
+    font-family: Library.$number-font;
+ 
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.phoneicon{
+    margin-top: 3px;
+    height: 30px;
+    margin: auto;
+    padding-left: 10px;
+}
+.navlinks {
     margin-right: 20px;;
     float: right;
     display: flex;
     list-style-type: none; /* Remove default list styling */
-
+    margin: auto;
+    margin-left: 650px;
 
 }
 
-.nav-link {
+.navlink {
     margin: 0 15px; /* Spacing between each link */
 }
 
-.nav-link a {
-    text-shadow:
-    -1px -1px 0 #000,
-     0   -1px 0 #000,
-     1px -1px 0 #000,
-     1px  0   0 #000,
-     1px  1px 0 #000,
-     0    1px 0 #000,
-    -1px  1px 0 #000,
-    -1px  0   0 #000;
+.navlink a {
     text-transform: uppercase;
     text-decoration: none; /* Remove underline from links */
    
-    color: #ffffff; /* Dark color for the text */
+    color: #747474; /* Dark color for the text */
  /* Make the font bold */
-    font-size: 20px; /* Set a standard font size */
+    font-size: 16px; /* Set a standard font size */
     transition: color 0.7s ease; /* Smooth transition for hover effect */
     
 }
 
-.nav-link a:hover {
-    color: rgb(240, 195, 137); /* Change color on hover */
+.navlink a:hover {
+    color: rgb(179, 134, 75); /* Change color on hover */
 
     border-bottom: 1px solid #7f8c8d; /* Add a bottom border on hover */
     padding-bottom: 5px; /* Space between text and border */
@@ -52,15 +81,19 @@
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
-    .nav-links {
+    .navlinks {
         font-size: 10px;
     }
 
-    .nav-link {
+    .navlink {
         margin: 10px 0; /* Adjust spacing for stacked layout */
     }
-    .nav-link a{
+    .navlink a{
         padding: 10px;
         font-size: 15px;    
     }
+}
+.logo{
+    max-height: 49px;
+    margin-left: 50px;;
 }

@@ -1,0 +1,41 @@
+@use 'Library';
+.mainaboutusdiv{
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    justify-content: center;
+}   
+.mainaboutcontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.abouttextdiv{
+    
+    text-align: center;
+    max-width: 930px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.abouttitle{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 70px;
+    font-size: 36px;
+    font-family: Library.$main-header-font;
+}
+.abouttext{
+    font-family: Library.$number-font;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 70px;
+    font-size: 24px;
+}
+.aboutimg{
+   
+    width: 920px;
+    object-fit:cover;
+    height: 500px;
+}

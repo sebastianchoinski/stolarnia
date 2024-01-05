@@ -6,20 +6,20 @@ import './Praises.scss'
 
 export default function Praises(props) {
     return (
-        <div className='main-icon-div'>
-            <div className='icon-div'>
-            <img className='icon-img' src={icon1}></img>
-            <p className='description-text'>JAKOŚĆ</p>
+        <div className='mainicondiv'>
+            <div className='icondiv'>
+            <img className='iconimg' src={icon1}></img>
+            <p className='descriptiontext'>JAKOŚĆ</p>
             </div>
             
-            <div className='icon-div'>
-            <img className='icon-img'  src={icon2}></img>
-            <p className='description-text'>PROFESJONALIZM</p>
+            <div className='icondiv'>
+            <img className='iconimg'  src={icon2}></img>
+            <p className='descriptiontext'>PROFESJONALIZM</p>
             </div>
             
-            <div className='icon-div'>
-            <img className='icon-img'  src={icon3}></img>
-            <p className='description-text'>KONTAKT Z KLIENTEM</p>
+            <div className='icondiv'>
+            <img className='iconimg'  src={icon3}></img>
+            <p className='descriptiontext'>KONTAKT Z KLIENTEM</p>
             </div>
             
         </div>

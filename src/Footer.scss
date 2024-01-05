@@ -1,55 +1,62 @@
 @use 'Library';
 .footer {
-    background-color: Library.$color6;
-    color: white;
+    background-color: rgb(104, 96, 85);
+    color: Library.$color3;
     text-align: center;
     padding: 20px 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: Library.$number-font;
+    
     margin-top: 50px;
 }
 
-.footer-nav, .footer-contact {
+.footernav, .footercontact {
     margin-bottom: 15px;
 }
 
-.footer-links {
+.footerlinks {
+    padding: 5px;
+    text-decoration: underline;
+    text-underline-offset: 7px;
     list-style: none;
     padding: 0;
     display: inline-flex;
     justify-content: center;
 }
 
-.footer-links li {
+.footerlinks li {
     margin: 0 10px;
 }
 
-.footer-links a {
+.footerlinks a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
-    color: #f39c12;
+.footerlinks a:hover {
+    color: Library.$color6;
 }
 
-.footer-contact p {
+.footercontact p {
     margin: 5px 0;
 }
 
-.footer-bottom {
+.footerbottom {
     margin-top: 15px;
-    border-top: 1px solid #34495e;
-    padding-top: 10px;
+   padding-top: 10px;
+}
+.footerhr{
+    max-width: 1200px;
+
 }
 
 @media (max-width: 768px) {
-    .footer-links {
+    .footerlinks {
         flex-direction: column;
         margin-bottom: 20px;
     }
 
-    .footer-links li {
+    .footerlinks li {
         margin-bottom: 10px;
     }
 }

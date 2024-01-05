@@ -1,7 +1,7 @@
 import React from 'react';
 import { gql, useQuery } from '@apollo/client';
-import Slider from "react-slick";
 import './Projects.scss'
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -10,7 +10,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "red" }}
+      style={{ ...style, display: "block",  zindex: '99' ,width: '40px', height: '40px', padding:'8px' }}
       onClick={onClick}
     />
   );
@@ -21,7 +21,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: "block", background: "green" }}
+      style={{ ...style, display: "block", zindex: '99', width: '40px', height: '40px', padding:'30px' }}
       onClick={onClick}
     />
   );
@@ -53,30 +53,40 @@ export default function Projects(props) {
           speed: 500,
           slidesToShow: 1,
           slidesToScroll: 1,
-          nextArrow: <SampleNextArrow />,
-          prevArrow: <SamplePrevArrow />
+          
         };       
-    return (
-        <div>
-
+        return (
+          <div>
+      <h1 className='mainprojectheader'>PROJEKTY</h1>
+        <hr className='mainprojectshr'></hr>
+        <div className='mainprojectsdiv'>
+          <div className='projectsdiv'>
+            
             {data? data.projects.map((data) => (
-            <div>
-                <p>{data.title}</p>
-                <p>{data.description}</p>
-                <div>
-        <div>
-        <Slider className='slider-div' {...settings}>
+              <div className='projectdiv'>
+              <div className='projecttitledesc'>
+                <h1 className='projecttitle'>{data.title}</h1>
+                <p className='projectdesc'>{data.description}</p>
+                </div>
+                
+        
+        <Slider style={{maxwidth: "100%"}} className='projectssliderdiv' {...settings}>
+          
         {data.images? data.images.map((image) => (
-            <div>
-                <img className="carousel-img" src={image.url}></img>
-            </div>
-            )): null}
+          
+          <img  className="carouselimg" src={image.url}></img>
+          
+          )): null}
           
         </Slider>
-        </div>
+        
       </div>
-            </div>
+            
             )): null }
+            
+            </div>
+            
+        </div>
         </div>
     );
 }

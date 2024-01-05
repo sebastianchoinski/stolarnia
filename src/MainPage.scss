@@ -1,19 +1,34 @@
 @use 'Library';
+.XX{
+    background-color: Library.$color7;
+}
+.mainpagediv{
+    
 
-.main-page-top-photo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mainpagetopphoto{
     width: 100%;
     height: 500px;
     object-fit: cover;
     filter: blur(4px) sepia(20%);
 }
-.image-container{
+.imagecontainer{
     width: 100%; 
   height: 100%;
   overflow: hidden; 
   padding: 0;
   margin: 0;
 }
-.photo-text-title{
+.phototext{
+    background-color: Library.$color3;
+    border-radius: 100px;
+    width: 100%;
+    padding: 20px;
+    
+}
+.phototexttitle{
     position: absolute; /* Position the text absolutely relative to the container */
     top: 200px;
     margin-left: auto;
@@ -25,7 +40,7 @@
     padding: 5px 10px; /* Adjust padding as needed */
     z-index: 1; /* Place the text above the image */
 }
-.main-page-hr{
+.mainpagehr{
     margin-top: 30px;
     width: 1300px;
     border: 1.5px solid black;
@@ -33,3 +48,33 @@
     margin-top: 60px;
     margin-bottom: 30px;
 }
+.readmorea{
+    width: 300px;
+    max-width: 300px;
+    text-decoration: none;
+}
+.readmore{
+    background-color: Library.$color8;
+    max-width: 300px;
+    height: 80px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    transition: transform .7s; 
+    
+}
+.readmore p{
+
+    text-underline-offset: 12px;
+    
+    font-size: 20px;
+    font-family: Library.$button-font;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin: auto;
+   
+    text-align: center;
+}
+.readmore:hover{
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }

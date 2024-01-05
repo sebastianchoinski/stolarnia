@@ -1,0 +1,67 @@
+@use 'Library';
+.topdiv{
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    width:100%;
+  height: 500px;
+  width: 1600px;
+}
+.topheader{
+    font-family: Library.$main-header-font;
+    font-size: 52px;
+    text-align: left;
+    margin-left: 30px;
+}
+.toptext{
+    
+    font-family: Library.$button-font;
+    font-size: 24px;
+    margin-left: 30px;
+    margin-right: 90px;
+    text-align: justify;
+}
+.topimage{
+    max-height: 500px;
+}
+.abouthr{
+    max-width: 1400px;
+    margin-top: 100px;
+}
+.markheadera{
+    text-decoration: none;
+    color: black;
+    max-width: 1400px;
+}
+.markheader{
+    max-width: 1400px;
+    margin:auto;
+    text-decoration: none;
+    margin-top: 80px;
+    font-family: Library.$header-font;
+    font-weight: lighter;
+    font-size: 80px;
+    text-align: center; 
+    transition: 1s;
+   }
+   .yearheader{
+    margin-top: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 80px;
+    text-align: center; 
+    transition: 1s;
+   }
+
+.markheader:after{
+ content: 'MANUFAKTURA STOLAR';
+ transition: 1s;
+}
+.markheader:hover:after{
+    content: 'STOLAR MANUFAKTURA';
+}
+.markheader:hover{
+    scale: 1.03;
+}
+
+
