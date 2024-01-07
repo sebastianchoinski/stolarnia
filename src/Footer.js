@@ -1,15 +1,20 @@
 import React from 'react';
 import './Footer.scss'
+import { Link } from "react-router-dom";
 export default function Footer(props) {
     return (
         
 <footer className="footer">
     <div className="footernav">
         <ul className="footerlinks">
-            <li><a href="/">Strona główna</a></li>
-            <li><a href="projects">Projekty</a></li>
-            <li><a href="about">O nas</a></li>
-            <li><a href="contact">Kontakt</a></li>
+            <Link to='/'><li><a>Strona główna</a></li></Link>
+            <Link to='/projects'><li><a>Projekty</a></li></Link>
+            <Link to='/about'><li><a>O nas</a></li></Link>
+            <Link to='/contact'><li><a>Kontakt</a></li></Link>
+            
+            
+            
+            
         </ul>
     </div>
     <div className="footercontact">

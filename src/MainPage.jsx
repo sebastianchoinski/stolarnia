@@ -5,6 +5,7 @@ import Praises from './Praises.js';
 import { gql, useQuery } from '@apollo/client';
 import Services from './Services.jsx';
 import AboutUs from './AboutUs.jsx';
+import { Link } from "react-router-dom";
 
 const GET_POSTS = gql`
 query Posts {
@@ -29,10 +30,12 @@ export default function MainPage(props) {
     return (
         
         <div className='mainpagediv'>
-          <a href='/about'className='markheadera'><h1 className='markheader'></h1></a>
+          <Link to='/about'><a className='markheadera'><h1 className='markheader'></h1></a></Link>
+          
           <hr className='abouthr'></hr>
             <Services></Services>
-            <a className='readmorea' href="/projects"><div href="/projects" className='readmore'><p>Zobacz nasze realizacje!</p></div></a>
+            <Link to='/projects'><a className='readmorea'><div className='readmore'><p>Zobacz nasze realizacje!</p></div></a>
+            </Link>
             <div className="XX">
             <AboutUs></AboutUs>
             <div className='phototext'>
@@ -43,7 +46,8 @@ export default function MainPage(props) {
             <div className='praises'>
             <Praises></Praises>
             </div>
-            <a className='readmorea' href="/contact"><div href="/contact" className='readmore'><p>Wyślij zapytanie!</p></div></a>
+            <Link to='/contact'><a className='readmorea' ><div className='readmore'><p>Wyślij zapytanie!</p></div></a>
+            </Link>
             
         </div>
     );
