@@ -17,6 +17,7 @@ function App() {
       <Topbar></Topbar>
       <Routes>
         <Route exact path="/" element={<MainPage></MainPage>}></Route>
+        <Route exact path="/stolarnia" element={<MainPage></MainPage>}></Route>
         <Route path="/projects" element={<Projects></Projects>}></Route>
         <Route path="/blog" element={<Blog/>}></Route>
         <Route path="/contact" element={<Contact/>}></Route>
