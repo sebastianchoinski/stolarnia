@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/stolar/static/css/main.de5eff2f.css",
+    "main.js": "/stolar/static/js/main.966d6876.js",
+    "static/js/787.aa84917f.chunk.js": "/stolar/static/js/787.aa84917f.chunk.js",
+    "static/media/main-page-top-photo.jpg": "/stolar/static/media/main-page-top-photo.b0df44c95a7427dcc30f.jpg",
+    "static/media/icon3.png": "/stolar/static/media/icon3.ea2075495e43fc1659b2.png",
+    "static/media/icon1.png": "/stolar/static/media/icon1.ae3d99f736fa1baeeb57.png",
+    "static/media/icon2.png": "/stolar/static/media/icon2.9fd5706c32248816e8b0.png",
+    "static/media/logo.png": "/stolar/static/media/logo.e31299bbed4d8db2d727.png",
+    "static/media/phoneicon.png": "/stolar/static/media/phoneicon.b1218c13589237b4a3fc.png",
+    "static/media/logo.svg": "/stolar/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/slick.svg": "/stolar/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/stolar/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/stolar/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/stolar/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/stolar/index.html",
+    "main.de5eff2f.css.map": "/stolar/static/css/main.de5eff2f.css.map",
+    "main.966d6876.js.map": "/stolar/static/js/main.966d6876.js.map",
+    "787.aa84917f.chunk.js.map": "/stolar/static/js/787.aa84917f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de5eff2f.css",
+    "static/js/main.966d6876.js"
+  ]
+}
