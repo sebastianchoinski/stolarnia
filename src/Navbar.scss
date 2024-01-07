@@ -1,7 +1,7 @@
 @use 'Library';
 Link{
     text-decoration: none;
-    
+
 }
 .mainnavbardiv {
     z-index: 5;
@@ -31,11 +31,13 @@ Link{
     background-color: #3a3a3a;
     height: 50px;
     float: right;
-    margin-right: 0;
+    padding-right: 0px;
     margin: auto;
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-right: 100px;
+    width: 20%;
 
 }
 .phonenumber a{
@@ -52,17 +54,26 @@ Link{
     padding-left: 10px;
 }
 .navlinks {
-    margin-right: 20px;;
+    padding-right: 100px;;
     float: right;
     display: flex;
+    justify-content: end;
+    width: 100%;
+    
     list-style-type: none; /* Remove default list styling */
     margin: auto;
-    margin-left: 650px;
-
+    
+    margin-left: 00px;
 }
 
 .navlink {
-    margin: 0 15px; /* Spacing between each link */
+   
+    width: 100%;
+    padding-right: 20px;
+    text-align: center;
+    
+    margin: auto;
+    margin-right: 15px;; /* Spacing between each link */
 }
 
 .navlink a {

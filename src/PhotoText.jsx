@@ -18,6 +18,7 @@ export default  function PhotoText(props) {
             </div>
             <img className="photo" src={data.picture.url}></img>
             </div>
+            <hr className='phototexthr'></hr>
             </div>
             
             )): null }

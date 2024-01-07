@@ -7,10 +7,10 @@ export default function Footer(props) {
 <footer className="footer">
     <div className="footernav">
         <ul className="footerlinks">
-            <Link to='/'><li><a>Strona główna</a></li></Link>
-            <Link to='/projects'><li><a>Projekty</a></li></Link>
-            <Link to='/about'><li><a>O nas</a></li></Link>
-            <Link to='/contact'><li><a>Kontakt</a></li></Link>
+            <Link to='/'><li className="footerlink"><a>Strona główna</a></li></Link>
+            <Link to='/projects'><li className="footerlink"><a>Projekty</a></li></Link>
+            <Link to='/about'><li className="footerlink"><a>O nas</a></li></Link>
+            <Link to='/contact'><li className="footerlink"><a>Kontakt</a></li></Link>
             
             
             

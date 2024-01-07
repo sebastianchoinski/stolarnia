@@ -19,7 +19,7 @@ export default function Praises(props) {
             
             <div className='icondiv'>
             <img className='iconimg'  src={icon3}></img>
-            <p className='descriptiontext'>KONTAKT Z KLIENTEM</p>
+            <p className='descriptiontext'>KONTAKT</p>
             </div>
             
         </div>

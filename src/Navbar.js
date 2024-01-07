@@ -13,9 +13,11 @@ export default function Navbar() {
             <Link to="/projects"><li className='navlink'> <a>Projekty</a> </li></Link>
             <Link to="/about"><li className='navlink'> <a>O nas</a> </li></Link>
             <Link to="/contact"><li className='navlink'> <a>Kontakt</a> </li></Link>                                                    
+            
             </ul>
             <div className='phonenumber'><img className="phoneicon" src={phoneicon}></img><a>+48 XXX XXX XXX</a></div>
-        </div>
+       
+             </div>
     )
 }
 

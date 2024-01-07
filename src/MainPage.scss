@@ -26,6 +26,7 @@
     border-radius: 100px;
     width: 100%;
     padding: 20px;
+    margin-top: 300px;;
     
 }
 .phototexttitle{
@@ -77,4 +78,12 @@
 }
 .readmore:hover{
     transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+@media only screen and (max-width: 480px) {
+    .markheader h1{
+        font-size: 14px;
+    }
+    .phototext{
+        border-radius: 0;
+    }
   }

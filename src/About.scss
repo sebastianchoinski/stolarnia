@@ -148,3 +148,67 @@
     max-width: 300px;
     margin: auto;
 }
+@media only screen and (max-width: 480px) {
+    .topdiv{
+        width: 350px;
+        flex-direction: column;
+        justify-content: center;
+        height: 550px;
+        
+    }
+    .topheader{
+        font-size: 24px;
+        text-align: center;
+        margin: auto;
+        margin: 30px 20px 0px 20px;
+    }
+    .toptext{
+        font-size: 18px;
+        text-align: center;
+        margin: auto;
+        margin: 10px 20px 0px 20px;
+    }
+    .topimagediv{
+        max-width: 330px;
+        margin: auto;
+    }
+    .topimage{
+        width: 300px;
+    }
+    .abouthr{
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        max-width: 350px;
+    }
+    .markheader{
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    .yearheader{
+        font-size: 20px;
+    }
+    .knowmore{
+        font-size: 32px;
+    }
+    .owners{
+        max-width: 350px;
+    }
+    .owner{
+        max-width: 150px;
+    }
+    .ownerimage{
+        max-width: 160px;
+        border-radius: 5px;
+    }
+    .ownername{
+        font-size: 18px;
+    }
+    .argument{
+        max-width: 330px;
+    }
+    .testaboutdiv{
+        max-width: 150px;
+    }
+
+  }

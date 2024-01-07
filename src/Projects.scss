@@ -4,6 +4,7 @@
     height: 100%;
     margin: auto;
     display: flex;
+    margin-bottom: 150px;
 }
 .projectssliderdiv{
     width: 300px;
@@ -20,10 +21,12 @@
     margin: auto;
 }
 .projectdiv{
-    padding: 60px;
+    padding: 0;
+    padding-top: 100px;
     margin: auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     max-width: 1200px;
     padding-bottom: 50px;
 }
@@ -55,4 +58,27 @@
 }
 .mainprojectshr{
     width: 1400px;
+}
+@media (max-width: 480px) {
+    .mainprojectshr{
+        width: 300px;
+    }
+    .projectdiv{
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        padding-right: 0;
+    }
+    .projectssliderdiv{
+        margin: auto;
+        margin-top: 40px;
+        
+        
+    }
+    .projecttitledesc{
+        margin: auto;
+        margin: 20px 20px 0 20px;
+    }
+    
 }

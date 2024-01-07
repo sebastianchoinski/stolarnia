@@ -27,7 +27,7 @@ function AboutUs(props) {
             <div className='mainaboutcontent'>
                 <div className='abouttextdiv'>
                 <h1 className='abouttitle'>{data.mainPageAboutUses[0].title}</h1>
-                <p className='abouttext'>{data.mainPageAboutUses[0].text}</p>
+                <p className='aboutustext'>{data.mainPageAboutUses[0].text}</p>
                 </div>
                 <div>
                 <img className='aboutimg' src={data.mainPageAboutUses[0].photo.url}></img>

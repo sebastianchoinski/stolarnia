@@ -41,16 +41,14 @@ export default function Topbar(props) {
         <div >
           <Navbar></Navbar>
           
-          <Slider className='slider-div' {...settings}>
+          <Slider className='sliderdiv' {...settings}>
             {data? data.topPhotos.map((data) => (
-              <div className='photo-container'><img
-              src={data.image.url}
-              className='main-page-top-photo'
-              ></img><p className='photo-text-title'>{data.toptext}
-              </p>
-              <a className='about-link' href='/about'>
-                <div className='about'><p className='about-text'>Przeczytaj o nas!</p></div>
-              </a>
+              <div className='photo-container'>
+                <img src={data.image.url} className='main-page-top-photo'></img>
+              <div className='topphototext'>
+              <p className='phototexttitle'>{data.toptext}</p>
+                <div className='about'><p className='abouttext'>Przeczytaj o nas!</p></div>
+                </div>
               </div>
             ) ): null}
             </Slider>

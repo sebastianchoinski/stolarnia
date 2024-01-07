@@ -5,6 +5,7 @@
     padding: 20px;
     width: 1200px;
     margin: auto;
+    
 }
 
 /* Default layout - text on left, photo on right */
@@ -41,6 +42,7 @@
 }
 
 .phototexthr {
+    display: none;
     width: 1300px;
 }
 .maindiv > div:nth-child(odd) .mainelement {
@@ -66,3 +68,49 @@
     text-align: justify;
 
 }
+@media only screen and (max-width: 480px) {
+    .mainelement {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        width: 450px;
+        margin: auto;
+    }
+    .header{
+        text-align: center;
+    }
+    .text{
+        text-align: center;
+        padding: 0;
+        
+    }
+    .textcontainer{
+        margin: auto;
+        padding-right: 40px;
+    }
+    .photo{
+        max-width: 400px;
+        margin: 0;
+    }
+    .maindiv:nth-child(odd) {
+        flex-direction: column;
+    }
+    
+    /* Reversed layout for even elements - photo on left, text on right */
+    .maindiv:nth-child(even) {
+        flex-direction: column;
+    }
+    .maindiv > div:nth-child(odd) .mainelement {
+        flex-direction: column;
+    }
+    
+    .maindiv > div:nth-child(even) .mainelement {
+        flex-direction: column;
+    }
+    .phototexthr{
+        z-index: 991000000;
+        
+            max-width: 400px;
+        
+    }
+  }

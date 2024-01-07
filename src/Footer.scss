@@ -50,13 +50,15 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .footerlinks {
         flex-direction: column;
         margin-bottom: 20px;
     }
 
     .footerlinks li {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+
     }
+    
 }

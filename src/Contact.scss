@@ -97,3 +97,26 @@
 .call{
     font-weight: bold;
 }
+@media only screen and (max-width: 480px) {
+.contact-form{
+    max-width: 350px;;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.contact-form input{
+    max-width: 300px;
+    margin: auto;
+}
+.contact-form textarea{
+    max-width: 300px;
+    margin: auto;
+}
+.othercontactforms{
+    max-width: 350px;
+    margin: auto;
+}
+.contactheader{
+    font-size: 24px;
+}
+}
