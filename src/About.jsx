@@ -11,7 +11,20 @@ query MyQuery {
       }
       topText
     }
+    aboutOwners {
+      photo {
+        url
+      }
+      name
+    }
+    aboutCompanies {
+      ourProducts
+      ourMission
+      aboutUs
+      whyUs
+    }
   }
+  
 `;  
 
 function About(props) {
@@ -35,6 +48,38 @@ function About(props) {
             <hr className='abouthr'></hr>
             <h1 className='markheader'></h1>
             <h1 className='yearheader'>{currentYear}</h1>
+            <hr className='abouthr'></hr>
+            <h1 className='knowmore'>Poznaj nas!</h1>
+            <div className='owners'>
+                <div className='owner'>
+                    <img className='ownerimage'  src={data.aboutOwners[0].photo.url}></img>
+                    <p className='ownername'>{data.aboutOwners[0].name}</p>
+                </div>
+                <div className='owner'>
+                    <img className='ownerimage' src={data.aboutOwners[1].photo.url}></img>
+                    <p className='ownername'>{data.aboutOwners[1].name}</p>
+                </div>
+            </div>
+            <div className='arguments'>
+                <div className='argument'>
+                    <h1 className='argumentitle'>O nas</h1>
+                    <p className='argumenttext'>{data.aboutCompanies[0].aboutUs}</p>
+                </div>
+                <div className='argument'>
+                    <h1 className='argumentitle'>Nasza misja</h1>
+                    <p className='argumenttext'>{data.aboutCompanies[0].ourMission}</p>
+                </div>
+                <div className='argument'>
+                    <h1 className='argumentitle'>Nasze produkty</h1>
+                    <p className='argumenttext'>{data.aboutCompanies[0].ourProducts}</p>
+                </div>
+                <div className='argument'>
+                    <h1 className='argumentitle'>Dlaczego my?</h1>
+                    <p className='argumenttext'>{data.aboutCompanies[0].whyUs}</p>
+                </div>
+                <div className='testaboutdiv'><a className='aboutreadmorea' href="/contact"><div href="/contact" className='aboutreadmore'><p>Wyślij zapytanie!</p></div></a></div>
+
+            </div>
         </div>
     );
 }
