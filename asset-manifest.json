@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/git/static/css/main.c379d4b7.css",
-    "main.js": "/git/static/js/main.d738066b.js",
-    "static/js/787.aa84917f.chunk.js": "/git/static/js/787.aa84917f.chunk.js",
-    "static/media/main-page-top-photo.jpg": "/git/static/media/main-page-top-photo.b0df44c95a7427dcc30f.jpg",
-    "static/media/icon3.png": "/git/static/media/icon3.ea2075495e43fc1659b2.png",
-    "static/media/icon1.png": "/git/static/media/icon1.ae3d99f736fa1baeeb57.png",
-    "static/media/icon2.png": "/git/static/media/icon2.9fd5706c32248816e8b0.png",
-    "static/media/logo.png": "/git/static/media/logo.e31299bbed4d8db2d727.png",
-    "static/media/phoneicon.png": "/git/static/media/phoneicon.b1218c13589237b4a3fc.png",
-    "static/media/logo.svg": "/git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "static/media/slick.svg": "/git/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/git/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/git/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/git/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/git/index.html",
-    "main.c379d4b7.css.map": "/git/static/css/main.c379d4b7.css.map",
-    "main.d738066b.js.map": "/git/static/js/main.d738066b.js.map",
-    "787.aa84917f.chunk.js.map": "/git/static/js/787.aa84917f.chunk.js.map"
+    "main.css": "/stolarnia/static/css/main.fba7ba4d.css",
+    "main.js": "/stolarnia/static/js/main.8a985aeb.js",
+    "static/js/787.aa84917f.chunk.js": "/stolarnia/static/js/787.aa84917f.chunk.js",
+    "static/media/main-page-top-photo.jpg": "/stolarnia/static/media/main-page-top-photo.b0df44c95a7427dcc30f.jpg",
+    "static/media/icon3.png": "/stolarnia/static/media/icon3.ea2075495e43fc1659b2.png",
+    "static/media/icon1.png": "/stolarnia/static/media/icon1.ae3d99f736fa1baeeb57.png",
+    "static/media/icon2.png": "/stolarnia/static/media/icon2.9fd5706c32248816e8b0.png",
+    "static/media/logo.png": "/stolarnia/static/media/logo.e31299bbed4d8db2d727.png",
+    "static/media/phoneicon.png": "/stolarnia/static/media/phoneicon.b1218c13589237b4a3fc.png",
+    "static/media/logo.svg": "/stolarnia/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/slick.svg": "/stolarnia/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/stolarnia/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/stolarnia/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/stolarnia/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/stolarnia/index.html",
+    "main.fba7ba4d.css.map": "/stolarnia/static/css/main.fba7ba4d.css.map",
+    "main.8a985aeb.js.map": "/stolarnia/static/js/main.8a985aeb.js.map",
+    "787.aa84917f.chunk.js.map": "/stolarnia/static/js/787.aa84917f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c379d4b7.css",
-    "static/js/main.d738066b.js"
+    "static/css/main.fba7ba4d.css",
+    "static/js/main.8a985aeb.js"
   ]
 }
