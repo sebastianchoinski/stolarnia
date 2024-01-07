@@ -3,6 +3,7 @@
   "homepage": "git",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sebastianchoinski.github.io/stolarnia/",
   "dependencies": {
     "@apollo/client": "^3.8.7",
     "@testing-library/jest-dom": "^5.17.0",
@@ -21,6 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
