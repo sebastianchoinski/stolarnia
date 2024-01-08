@@ -1,7 +1,7 @@
 import React from 'react';
 import './Topbar.scss'
 import mainpagetopphoto from './main-page-top-photo.jpg'
-import Navbar from './Navbar.js';
+import   Navbar  from './Navbar.jsx';
 import { gql, useQuery } from '@apollo/client';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -52,6 +52,7 @@ export default function Topbar(props) {
               </div>
             ) ): null}
             </Slider>
+            <p className='wycena'>WYCENA W 24H!</p>
             
         </div>
     );

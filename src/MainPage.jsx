@@ -34,7 +34,7 @@ export default function MainPage(props) {
           
           <hr className='abouthr'></hr>
             <Services></Services>
-            <Link to='/projects'><a className='readmorea'><div className='readmore'><p>Zobacz nasze realizacje!</p></div></a>
+            <Link to='/projects'><div className='readmore'><p>Zobacz nasze realizacje!</p></div>
             </Link>
             <div className="XX">
             <AboutUs></AboutUs>

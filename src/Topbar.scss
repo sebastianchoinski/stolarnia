@@ -1,11 +1,23 @@
 @use 'Library';
+.wycena{
+    font-family: Library.$main-header-font;
+    font-size: 28px;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+    
 
+}
 .slick-slide div{
 
     width: 100%;
 }
 .sliderdiv{
     width: 100%;
+    z-index: 1;
 }
 .main-page-top-photo{
     width: 100%;
@@ -32,12 +44,12 @@
     left: 0px;
     margin-left: 200px;
     top: 200px;
-    font-size: 74px;
+    font-size: 54px;
     font-family: Library.$main-header-font;
     max-width: 700px;
     color: Library.$color1; /* Set the text color */
     padding: 5px 10px; /* Adjust padding as needed */
-    z-index: 1; /* Place the text above the image */
+   
     text-shadow: 0px -1px 3px rgba(0, 0, 0, 1);
 }
 
@@ -79,7 +91,7 @@
     }
     .phototexttitle{
         font-size: 30px;
-        top: 120px;
+        top: 60px;
         text-align: center;
         width: 200px;
         margin: auto;
@@ -110,6 +122,9 @@
    .topphototext{
     top: 300px;
    }
-
+   .wycena{
+    font-size: 24px;
+    padding-bottom: 60px;
+   }
 
     }
