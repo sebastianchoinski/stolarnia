@@ -1,6 +1,7 @@
 import React from 'react';
 import { gql, useQuery } from '@apollo/client';
 import './About.scss'
+import { Helmet } from 'react-helmet-async';
 
 const GET_POSTS = gql`
 query MyQuery {
@@ -35,6 +36,10 @@ function About(props) {
     const currentYear = new Date().getFullYear();
     return (
         <div>
+            <Helmet>
+        <title>O nas | Manufaktura Stolar</title>
+        <meta name="description" content="Strona Manufaktury Stolar. Wejdź i dowiedz się więcej!"></meta> 
+          </Helmet>
             <div className='topdiv'>
                 <div className='toptextdiv'>
                     <h1 className='topheader'>{data.abouts[0].topTitle}</h1>

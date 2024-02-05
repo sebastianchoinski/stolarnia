@@ -1,4 +1,20 @@
 @use 'Library';
+.meeting{
+    margin-top: 60px;
+    background-color: Library.$color5;
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+
+}
+.meetingtext{
+    font-family: Library.$button-font;
+    text-align: center;
+    padding-top: 13px;
+    color: black;
+    font-size: 18px;
+}
+
 .mainaboutusdiv{
     padding: 0;
     display: flex;
@@ -46,11 +62,14 @@
     margin: auto;
 }
 @media only screen and (max-width: 480px) {
+    .meeting{
+        margin-top: 30px;
+    }
     .mainaboutusdiv{
         padding: 0;
         margin: 0;
         margin-top: 20px;
-        padding-bottom: 280px;
+        padding-bottom: 330px;
         padding-top: 30px;
     }
     .mainaboutcontent{

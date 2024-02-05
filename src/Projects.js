@@ -4,6 +4,7 @@ import './Projects.scss'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Helmet } from 'react-helmet-async';
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -56,7 +57,12 @@ export default function Projects(props) {
           
         };       
         return (
+          
           <div>
+            <Helmet>
+        <title>Projekty | Manufaktura Stolar</title>
+        <meta name="description" content="Strona Manufaktury Stolar. Wejdź i dowiedz się więcej!"></meta> 
+          </Helmet>
       <h1 className='mainprojectheader'>PROJEKTY</h1>
         <hr className='mainprojectshr'></hr>
         <div className='mainprojectsdiv'>

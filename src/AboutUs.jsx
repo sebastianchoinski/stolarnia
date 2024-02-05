@@ -28,6 +28,8 @@ function AboutUs(props) {
                 <div className='abouttextdiv'>
                 <h1 className='abouttitle'>{data.mainPageAboutUses[0].title}</h1>
                 <p className='aboutustext'>{data.mainPageAboutUses[0].text}</p>
+                <a href='/contact'><div className='meeting'><p className='meetingtext'>Umów spotkanie</p></div>
+                </a>
                 </div>
                 <div>
                 <img className='aboutimg' src={data.mainPageAboutUses[0].photo.url}></img>

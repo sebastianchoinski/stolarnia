@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.scss";
 import "slick-carousel/slick/slick-theme.scss";
-
+import { Link } from "react-router-dom";
 
 
 
@@ -39,6 +39,7 @@ export default function Topbar(props) {
 
     return (
         <div >
+          
           <Navbar></Navbar>
           
           <Slider className='sliderdiv' {...settings}>
@@ -47,12 +48,12 @@ export default function Topbar(props) {
                 <img src={data.image.url} className='main-page-top-photo'></img>
               <div className='topphototext'>
               <p className='phototexttitle'>{data.toptext}</p>
-                <div className='about'><p className='abouttext'>Przeczytaj o nas!</p></div>
+                <Link to='/about'><div className='about'><p className='abouttext'>Zobacz więcej</p></div></Link>
                 </div>
               </div>
             ) ): null}
             </Slider>
-            <p className='wycena'>WYCENA W 24H!</p>
+            
             
         </div>
     );

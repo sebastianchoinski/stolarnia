@@ -1,8 +1,14 @@
 import React from 'react';
 import './Contact.scss'
+import { Helmet } from 'react-helmet-async';
+
 function Contact(props) {
     return (
         <div>
+            <Helmet>
+        <title>Kontakt | Manufaktura Stolar</title>
+        <meta name="description" content="Strona Manufaktury Stolar. Wejdź i dowiedz się więcej!"></meta> 
+          </Helmet>
             <h2 className='contactheader'>Skontaktuj się z nami poprzez formularz</h2>
     <div className='contact-form'>
     <form action="https://formsubmit.co/0ed6151b87d0348dbd82eb3911187d3b" method="POST" enctype="multipart/form-data">

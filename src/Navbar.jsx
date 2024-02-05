@@ -1,17 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import classnames from "classnames";
-import phoneicon from './phoneicon.png'
-import logo from './logo.svg'
+import phoneicon from './phone.png'
+import logo from './icon2.png'
 import "./Navbar.scss"
 
 const textLinks = [
   {
-    text: "STRONA GŁÓWNA",
+    text: "STRONA GŁÓWNA  ",
     href: "/"
   },
   {
-    text: "PROJEKTY",
+    text: "OFERTA  ",
     href: "/projects"
   },
   {
@@ -19,7 +19,7 @@ const textLinks = [
     href: "/about"
   },
   {
-    text: "KONTAKT",
+    text: "KONTAKT  ",
     href: "/contact"
   }
 
@@ -84,16 +84,16 @@ export default function Navbar({ dark, cream }){
     <nav
       className="navbar"
     >
+
       {hideBar}
       <div className="container">
         <div className="logoContainer">
           <Link to="/">
-            <a className="logo">
+            <a className="navbarlogo">
               <img
                 src={logo}
-                alt="Mirumee Software"
-                width={140}
-                height={36}
+                width={85}
+                height={85}
               />
             </a>
           </Link>
@@ -122,9 +122,13 @@ export default function Navbar({ dark, cream }){
               </Link>
             </li>
           ))}
-          <li>
-            <div className="phonediv"><img src={phoneicon}></img><p>+48 XXX XXX XXX</p></div>
-          </li>
+          <div className="phonediv"><a className="cityname" >Warszawa</a><img className='ikonkatel' src={phoneicon}></img>	
+<a className='phonetocall' href="tel:797-953-031">797 953 031</a><a className="ukosnik">  /  </a> <a className='phonetocall' href="tel:690-470-062">690 470 062</a> </div>
+        
+          <div className="wycena24h">
+            <p className="wycena24htext">WYCENA W 24H</p>
+          </div>
+          
           
         </ul>
       </div>

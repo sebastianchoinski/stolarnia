@@ -6,6 +6,8 @@ import { gql, useQuery } from '@apollo/client';
 import Services from './Services.jsx';
 import AboutUs from './AboutUs.jsx';
 import { Link } from "react-router-dom";
+import { Helmet } from 'react-helmet-async';
+import stolarlogo from './logo.png'
 
 const GET_POSTS = gql`
 query Posts {
@@ -30,6 +32,15 @@ export default function MainPage(props) {
     return (
         
         <div className='mainpagediv'>
+          
+          <Helmet>
+        <title>Manufaktura Stolar</title>
+        <meta name="description" content="Strona Manufaktury Stolar. Wejdź i dowiedz się więcej!"></meta> 
+          </Helmet>
+        
+            <div className='praises'>
+            <Praises></Praises>
+            </div>
           <Link to='/about'><a className='markheadera'><h1 className='markheader'></h1></a></Link>
           
           <hr className='abouthr'></hr>
@@ -43,9 +54,6 @@ export default function MainPage(props) {
             </div>
             </div>
             <hr className='mainpagehr'></hr>
-            <div className='praises'>
-            <Praises></Praises>
-            </div>
             <Link to='/contact'><a className='readmorea' ><div className='readmore'><p>Wyślij zapytanie!</p></div></a>
             </Link>
             
