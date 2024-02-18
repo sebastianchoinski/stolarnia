@@ -1,0 +1,250 @@
+@use 'Library';
+.topdiv{
+    margin: auto;
+    margin-top: 150px;
+    display: flex;
+    width:100%;
+  height: 500px;
+  width: 1600px;
+  border-radius: 60px 0 60px 0;
+  background-color: rgb(245, 241, 236);
+}
+.topheader{
+    font-family: Library.$main-header-font;
+    font-size: 52px;
+    text-align: left;
+    margin-left: 45px;
+}
+.toptext{
+    
+    font-family: Library.$button-font;
+    font-size: 24px;
+    margin-left: 45px;
+    margin-right: 90px;
+    text-align: justify;
+}
+.topimage{
+    max-height: 500px;
+    border-radius: 0 0 60px 0;
+}
+.abouthr{
+    max-width: 1400px;
+    margin-top: 100px;
+}
+.markheadera{
+    text-decoration: none;
+    color: black;
+    max-width: 1400px;
+}
+.markheader{
+    max-width: 1400px;
+    margin:auto;
+    text-decoration: none;
+    margin-top: 80px;
+    font-family: Library.$header-font;
+    font-weight: lighter;
+    font-size: 80px;
+    text-align: center; 
+    transition: 1s;
+   }
+   .yearheader{
+    margin-top: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 80px;
+    text-align: center; 
+    transition: 1s;
+   }
+
+.markheader:after{
+ content: 'MANUFAKTURA STOLAR';
+ transition: 1s;
+}
+.markheader:hover:after{
+    content: 'STOLAR MANUFAKTURA';
+}
+.markheader:hover{
+    scale: 1.03;
+}
+.owners{
+    display: flex;
+    max-width: 900px;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 40px;
+}
+.ownerimage{
+    max-width: 320px;
+}
+.ownername{
+    text-align: center;
+    font-family: Library.$number-font;
+    font-size: 22px;
+   
+}
+.knowmore{
+    font-family: Library.$button-font;
+    font-weight: 100;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 30px;
+}
+.arguments{
+    margin-top: 60px
+}
+.argument{
+    background-color: rgba(245, 239, 212, 0.351);
+    max-width: 600px;
+    border: 1px solid rgba(245, 239, 212, 0.91);
+    margin: auto;
+    margin-top: 30px;
+    height: 100%;
+    border-radius: 30px 0 30px 0;
+    
+}
+.argumentitle{
+    font-family: Library.$header-font;
+    font-weight: 100;
+    text-align: center;
+}
+.argumenttext{
+    font-family: Library.$number-font;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 20px;
+}.aboutreadmorea{
+    width: 300px;
+    max-width: 300px;
+    text-decoration: none;
+}
+.aboutreadmore{
+    background-color: rgba(255, 213, 124, 0.514);
+    max-width: 300px;
+    height: 80px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    transition: transform .7s; 
+    border-radius: 0px 30px 0px 30px;
+    border: 1px solid rgba(189, 182, 153, 0.91)
+    
+}
+.aboutreadmore p{
+
+    text-underline-offset: 12px;
+    
+    font-size: 20px;
+    font-family: Library.$button-font;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin: auto;
+   
+    text-align: center;
+}
+.aboutreadmore:hover{
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+.testaboutdiv{
+    max-width: 300px;
+    margin: auto;
+}
+@media only screen and (max-width: 480px) {
+    .topdiv{
+        width: 300px;
+        flex-direction: column;
+        justify-content: center;
+        height: 370px;
+        padding-bottom: 80px;
+        padding-top: 50px;
+        
+    }
+    .topheader{
+        font-size: 22px;
+        text-align: center;
+        margin: auto;
+        margin: 30px 20px 0px 20px;
+        margin-top: 60px;
+    }
+    .toptext{
+        font-size: 16px;
+        text-align: center;
+        margin: auto;
+        margin: 20px 30px 0px 30px;
+    }
+    .topimagediv{
+        width: 300px;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .topimage{
+        width: 300px;
+    }
+    .abouthr{
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        max-width: 320px;
+    }
+    .markheader{
+        font-size: 25px;
+        margin-top: 40px;
+    }
+    .yearheader{
+        font-size: 20px;
+    }
+    .knowmore{
+        font-size: 32px;
+    }
+    .owners{
+        max-width: 280px;
+    }
+    .owner{
+        max-width: 120px;
+    }
+    .ownerimage{
+        max-width: 130px;
+        border-radius: 5px;
+    }
+    .ownername{
+        font-size: 18px;
+    }
+    .argument{
+        max-width: 270px;
+    }
+    .testaboutdiv{
+        max-width: 150px;
+    }
+
+  }
+  @media only screen and (max-width: 1400px) and (min-width: 481px) {
+    .topdiv{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        height: 550px;
+        
+    }
+    .topheader{
+        font-size: 30px;
+        
+    }
+    .toptext{
+        font-size: 20px;
+        text-align: left;
+        max-height: 300px;
+    }
+    .toptextdiv{
+        margin: auto;
+        margin-top: 90px;
+    }
+    .topimagediv{
+        margin: auto;
+    }
+    .topimage{
+        object-fit: cover;
+        width: 600px;
+        padding: 0;
+        margin-right: 30px;
+    }
+  }

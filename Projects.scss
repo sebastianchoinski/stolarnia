@@ -1,0 +1,86 @@
+@use './Library';
+.mainprojectsdiv{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    margin-bottom: 150px;
+    
+}
+.projectssliderdiv{
+    width: 300px;
+    
+}
+
+.slick-arrow{
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    z-index: 3;
+}
+.projectsdiv{
+    margin: auto;
+}
+.projectdiv{
+    padding: 0;
+    padding-top: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1200px;
+    padding-bottom: 50px;
+}
+.projecttitle{
+    font-family: Library.$main-header-font;
+    font-weight: 300;
+}
+.projectdesc{
+    
+    text-wrap: normal;
+    font-family: Library.$text-font;
+}
+.projecttitledesc{
+    max-width: 500px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.carouselimg{
+    border-radius: 30px;
+    width: 500px;
+    margin-right: 0;
+    padding: 0;
+}
+.mainprojectheader{
+    font-family: Library.$main-header-font;
+    font-size: 32px;
+    text-align: center;
+    margin: 70px;
+    margin-top: 150px;
+}
+.mainprojectshr{
+    width: 1400px;
+}
+@media (max-width: 480px) {
+    .mainprojectshr{
+        width: 300px;
+    }
+    .projectdiv{
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        padding-right: 0;
+    }
+    .projectssliderdiv{
+        margin: auto;
+        margin-top: 40px;
+        
+        
+    }
+    .projecttitledesc{
+        margin: auto;
+        margin: 20px 20px 0 20px;
+    }
+    
+}

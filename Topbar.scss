@@ -1,0 +1,131 @@
+@use 'Library';
+
+.wycena{
+    font-family: Library.$main-header-font;
+    font-size: 28px;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+    
+
+}
+.slick-slide div{
+
+    width: 100%;
+}
+.sliderdiv{
+    width: 100%;
+    z-index: 1;
+}
+.main-page-top-photo{
+    width: 100%;
+    max-height: 920px;
+    object-fit: cover;
+    filter: blur(4px) sepia(20%);
+    opacity: 0.6;
+}
+.photo-container{
+    position: relative;
+    width: 100%; 
+  max-height: 100%;
+  background: black;
+  overflow: hidden; 
+  padding: 0;
+  margin: 0;
+}
+.phototexttitle{
+    position: absolute; /* Position the text absolutely relative to the container */
+    text-align: left;
+    float: left;
+    font-weight: 400;
+    word-wrap: normal;
+    left: 0px;
+    margin-left: 200px;
+    top: 200px;
+    font-size: 54px;
+    font-family: Library.$main-header-font;
+    max-width: 700px;
+    color: Library.$color1; /* Set the text color */
+    padding: 5px 10px; /* Adjust padding as needed */
+   
+    text-shadow: 0px -1px 3px rgba(0, 0, 0, 1);
+}
+
+.about{
+    position: absolute;
+    bottom: 180px;
+    margin-left: 220px;
+    display: flex;
+    left: 0;
+    right: 0;
+    background-color: white;
+    max-width: 200px;
+    height: 70px;   
+    border-radius: 35px;
+
+    
+}
+.about:hover{
+    transition: 0.7s;
+    transform: scale(1.05);
+}
+.abouttext{
+    font-family: Library.$text-font;
+    bottom: 2px;
+    vertical-align: middle;
+    font-size: 22px;
+    position: relative;
+    margin-top: auto;
+    margin: auto;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.aboutlink{
+    text-decoration: none;
+}
+@media (max-width: 480px) {
+    .main-page-top-photo{
+        height: 500px;
+    }
+    .phototexttitle{
+        font-size: 30px;
+        top: 60px;
+        text-align: center;
+        width: 200px;
+        margin: auto;
+        margin-top: 50px;
+        padding-bottom: 200px;;
+
+    }
+    .sliderdiv{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about{
+        
+        max-width: 150px;
+        height: 50px;
+        margin: auto;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        bottom: 60px;
+        
+    }
+    .abouttext{
+        font-size: 18px;
+        margin: auto;
+        padding-bottom: 0;
+        
+    }
+   .topphototext{
+    top: 300px;
+   }
+   .wycena{
+    font-size: 24px;
+    padding-bottom: 60px;
+   }
+
+    }

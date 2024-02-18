@@ -1,0 +1,399 @@
+@use 'Library';
+.triangleright {
+	width: 0;
+	height: 0;
+	border-top: 7px solid transparent;
+	border-left: 14px solid Library.$color6;
+	border-bottom: 7px solid transparent;
+  margin-top: 2px;
+  margin-right: 10px;
+  @media (max-width: 480px) {
+    
+  }
+}
+.lidiv{
+  display: flex;
+  flex-direction: row;
+
+}
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 10px solid #555;
+	border-bottom: 5px solid transparent;
+}
+.phonetocall{
+  text-decoration: none;
+  color: black;
+  margin-top: 5px;
+}
+.topContactBar{
+  width: 100%;
+  height: 35px;
+  
+  border-bottom: 1px rgb(223, 223, 223) solid;
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+  margin: auto;
+  padding-top: 3px;
+  
+}
+
+.cityname{
+  margin-right: 30px;;
+  margin-top: 20px;
+  
+}
+.navbar {
+    height: 85px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    border-bottom: 1px solid darken(gray, 8%);
+    visibility: visible;
+    transform: none;
+    transition: all 400ms ease-in-out;
+  
+    &.dark {
+      background-color: black;
+  
+      @media (min-width: 480px) {
+        a {
+          color: white;
+
+        }
+        
+      }
+    }
+  
+    &.cream {
+      background-color: rgb(255, 255, 255);
+    }
+  
+    &.top {
+      background-color: transparent;
+      border: none;
+    }
+  
+    &.hidden {
+      visibility: hidden;
+      transform: translate(0, -100%);
+    }
+  
+    @media (max-width: 480px) {
+      min-height: 67px;
+      
+      
+    }
+  }
+  
+  .container {
+    @extend .container;
+    display: flex;
+    align-items: center;
+    min-height: 65px;
+    padding-top: 0px;
+  
+    @media (max-width: 480px) {
+      min-height: 57px;
+      flex-direction: column;
+    }
+  }
+ 
+  .linkList {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  
+    li {
+      padding: 0.4rem 1.1rem;
+    }
+  
+    @media (max-width: 480px) {
+      flex-direction: column;
+      width: 100vw;
+      background-color: white;
+      max-height: 0;
+      transition: max-height 0.3s ease;
+      overflow: hidden;
+  
+      &.showMenu {
+        max-height: 500px;
+        transition: max-height 0.5s ease;
+        border-top: 1px solid darken(gray, 8%);
+      }
+  
+      li {
+        padding: 1rem 0.5rem;
+      }
+  
+      button {
+        padding: 0.4rem 1rem 0.2rem;
+      }
+    }
+  }
+  
+  .link {
+    text-decoration: none;
+    color: black;
+    font-family: Library.$number-font;
+  
+    &:hover {
+      color: Library.$color6;
+      text-decoration: underline;
+    }
+  }
+  
+  .logoContainer {
+    margin-right: auto;
+    align-items: center;
+    height: 100%;
+    
+    
+    
+  
+    @media (max-width: 480px) {
+      
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0 155px;
+      box-sizing: border-box;
+    }
+  }
+  
+  .logo {
+    
+    margin-top: 0;
+    padding: 0;
+   
+    
+    @media (max-width: 480px) {
+
+      height: 100%;
+      margin-right: auto;
+      display: flex;
+      display: none;
+      align-items: center;
+      display: none;
+    }
+  }
+  .logo img{
+    max-height: 8px;
+    margin-left: 0px;
+   padding: 0; 
+   @media (max-width: 480px) {
+
+    display: none;
+  }
+  }
+  
+  .hamburger {
+    border: 1px solid darken(gray, 8%);
+    border-radius: 4px;
+    background-color: transparent;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 0;
+    cursor: pointer;
+    display: none;
+  
+    @media (max-width: 480px) {
+      display: block;
+    }
+  }
+  
+  .hamburgerIcon {
+    width: 42px;
+    height: 35px;
+    position: relative;
+    padding-left: 50px;
+    transition: 0.5s ease-in-out;
+    
+    span {
+      position: absolute;
+      height: 2px;
+      border-radius: 1px;
+      width: 20px;
+      margin: auto;
+      left: 0;
+      right: 0;
+      background: #000;
+      opacity: 1;
+      transition: 0.25s ease-in-out;
+      transform-origin: left center;
+  
+      &:nth-child(1) {
+        top: 10px;
+      }
+  
+      &:nth-child(2) {
+        top: 16px;
+      }
+  
+      &:nth-child(3) {
+        top: 22px;
+        transform-origin: left center;
+      }
+    }
+  
+    &.dark span {
+      background: white;
+    }
+  
+    &.open {
+      span {
+        &:nth-child(1) {
+          top: 10px;
+          left: 3px;
+          transform: rotate(40deg);
+        }
+  
+        &:nth-child(2) {
+          width: 0%;
+          opacity: 0;
+        }
+  
+        &:nth-child(3) {
+          top: 22px;
+          left: 3px;
+          transform: rotate(-40deg);
+        }
+      }
+    }
+  }
+  
+  .hireUs {
+    
+  
+    &.hireUsDark {
+      @media (min-width: 480px) {
+        border-color: white;
+        color: white;
+  
+        &:hover {
+          color: black;
+          background: white;
+        }
+      }
+    }
+}
+.phonediv{
+
+    padding: 8px;
+    margin-right: 35px;
+    padding-right: 20px;
+    display: flex;
+    margin-left: 35px;
+}
+.phonediv a{
+  
+    color: black;
+    font-family: Library.$button-font;
+    margin: auto;
+    
+}
+.cityname{
+  padding-right: 20px;
+  padding-left: 100px;
+}
+.phonediv img{
+    height: 20px;
+    width: 20px;
+    margin: auto;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+@media (max-width: 480px) {
+  .phonediv{
+    
+    padding: 4px;
+    margin-right: 9px;
+    padding-right: 8px;
+    display: flex;
+    margin-left: 20px;
+}
+.phonediv a{
+  
+    color: black;
+    font-family: Library.$button-font;
+    margin: auto;
+    
+}
+.cityname{
+  padding-right: 15px;
+}
+.phonediv img{
+    height: 20px;
+    width: 20px;
+    margin: auto;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+}
+@media(min-width: 480px){
+  .linkList{
+    padding-right: 30px;;
+  }
+}
+.wycena24h{
+  background-color: Library.$color7;
+  height: 65px;
+  width: 170px;
+}
+.wycena24htext{
+  font-family: Library.$button-font;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 7px;
+}
+@media(max-width: 480px){
+  .phonediv{
+    
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-style:italic;
+    text-align: center;
+  }
+  .ukosnik{
+    display: none;
+  }
+  .phonetocall{
+    padding-top: 10px;
+  }
+  .ikonkatel{
+    display: none;
+  }
+  .wycena24h{
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+
+  }
+  .cityname{
+    font-weight: bold;
+    padding: 0;
+  }
+  .wycena24htext{
+    padding-top: 0;
+  }
+}
+.navbarlogo{
+  @media (max-width:480px){
+    display: none;
+  }
+}

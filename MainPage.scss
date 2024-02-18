@@ -1,0 +1,99 @@
+@use 'Library';
+.XX{
+    background-color: Library.$color4;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.mainpagediv{
+    
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mainpagetopphoto{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: blur(4px) sepia(20%);
+}
+.imagecontainer{
+    width: 100%; 
+  height: 100%;
+  overflow: hidden; 
+  padding: 0;
+  margin: 0;
+}
+.phototext{
+    background-color: Library.$color3;
+    border-radius: 100px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 300px;;
+    
+}
+.phototexttitle{
+    position: absolute; /* Position the text absolutely relative to the container */
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white; /* Set the text color */
+    padding: 5px 10px; /* Adjust padding as needed */
+    z-index: 1; /* Place the text above the image */
+}
+.mainpagehr{
+    margin-top: 30px;
+    width: 1300px;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.readmorea{
+    width: 300px;
+    max-width: 300px;
+    text-decoration: none;
+}
+.readmore{
+    background-color: Library.$color8;
+    max-width: 300px;
+    height: 80px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    transition: transform .7s; 
+    
+}
+.readmore p{
+
+    text-underline-offset: 12px;
+    
+    font-size: 20px;
+    font-family: Library.$button-font;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin: auto;
+   
+    text-align: center;
+}
+.readmore:hover{
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+@media only screen and (max-width: 480px) {
+    .markheader h1{
+        font-size: 14px;
+    }
+    .phototext{
+        border-radius: 0;
+        padding: 0;
+    }
+    .readmore{
+        max-width: 240px;
+        height: 50px;
+    }
+    .readmore p{
+        font-size: 16px;
+    }
+  }

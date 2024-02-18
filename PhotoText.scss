@@ -1,0 +1,124 @@
+@use 'Library';
+.mainelement {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 1200px;
+    margin: auto;
+    
+}
+
+/* Default layout - text on left, photo on right */
+.maindiv:nth-child(odd) {
+    flex-direction: row;
+}
+
+/* Reversed layout for even elements - photo on left, text on right */
+.maindiv:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.textcontainer {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 30px;
+    flex: 1; /* Give the text container flexible width */
+}
+
+.photo {
+    width: 500px;
+    border-radius: 6px;
+    max-height: 300px;
+    object-fit: cover;
+    margin-left: 10px; /* Adjust as needed */
+    margin-right: 20px;
+}
+
+.header {
+    font-family: Library.$main-header-font;
+    color: #333; /* Dark color for header */
+    text-align: center;
+    margin: 20px;
+}
+
+.phototexthr {
+    display: none;
+    width: 1300px;
+}
+.maindiv > div:nth-child(odd) .mainelement {
+    flex-direction: row;
+}
+
+.maindiv > div:nth-child(even) .mainelement {
+    flex-direction: row-reverse;
+}
+
+/* Rest of your CSS */
+.mainelement {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    width: 1200px;
+    margin: auto;
+}
+.text{
+    font-family: Library.$text-font;
+    font-size: 18px;
+    margin: 40px;
+    text-align: justify;
+
+}
+@media only screen and (max-width: 480px) {
+    .mainelement {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        padding-bottom: 40px;;
+        padding-top: 40px;
+    }
+    .header{
+        text-align: center;
+        margin: auto;
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+    .text{
+        text-align: center;
+        padding: 0;
+        margin: auto;
+        font-size: 18px;
+        
+    }
+    .textcontainer{
+        margin: auto;
+        width: 300px;
+        
+    }
+    .photo{
+        max-width: 250px;
+        margin: auto;
+        padding-top: 40px;
+    }
+    .maindiv:nth-child(odd) {
+        flex-direction: column;
+    }
+    
+    /* Reversed layout for even elements - photo on left, text on right */
+    .maindiv:nth-child(even) {
+        flex-direction: column;
+    }
+    .maindiv > div:nth-child(odd) .mainelement {
+        flex-direction: column;
+    }
+    
+    .maindiv > div:nth-child(even) .mainelement {
+        flex-direction: column;
+    }
+    .phototexthr{
+        z-index: 991000000;
+        max-width: 200px;
+        
+    }
+  }

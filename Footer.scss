@@ -1,0 +1,65 @@
+@use 'Library';
+.footer{
+    background-color: bisque;
+    height: 100%;
+    margin: 0;
+    margin-top: 60px;
+}
+.footerpages{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+.footerpages a{
+    text-decoration: none;
+    color: black;
+    font-family: Library.$button-font;
+}
+.footerpages a:hover{
+    color: Library.$color7;
+}
+.footerdiv {
+    
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Library.$number-font;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 30px 300px 30px 300px;;
+}
+.socialimage{
+    width: 20px;
+    margin-right: 0px;
+    margin-left: 100px;
+}
+.singlesocial{
+    display: flex;
+    margin: auto;
+    margin-top: 5px;
+    justify-content: center;
+}
+.socialtext{
+    text-align: center;
+    margin: auto;
+    margin-left: 10px;
+    text-decoration: none;
+    color:black;
+    font-family: Library.$button-font;
+    
+}
+.footerinfo{
+    width: 100%;
+    margin-top: 20px;
+}
+.footersocialmedia{
+    width: 100%;
+    margin-top: 15px;
+}
+.singlesocial:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}

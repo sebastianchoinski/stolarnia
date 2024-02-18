@@ -1,0 +1,107 @@
+@use 'Library';
+.meeting{
+    margin-top: 60px;
+    background-color: white;
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+
+}
+.meetingtext{
+    font-family: Library.$button-font;
+    text-align: center;
+    padding-top: 13px;
+    color: black;
+    font-size: 18px;
+}
+
+.mainaboutusdiv{
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+    
+}   
+.mainaboutcontent{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.abouttextdiv{
+    margin: auto;
+    text-align: left;
+    max-width: 930px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.abouttitle{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    font-size: 36px;
+    font-family: Library.$main-header-font;
+}
+.aboutustext{
+    font-family: Library.$number-font;
+    max-width: 1000px;
+    margin: auto;
+    margin-left: 0px;
+    margin-top: 35px;
+    font-size: 24px;
+    text-align: left;
+}
+.aboutimg{
+   
+    width: 620px;
+    object-fit:cover;
+    height: 550px;
+    margin: auto;
+}
+@media only screen and (max-width: 480px) {
+    .meeting{
+        margin-top: 30px;
+    }
+    .mainaboutusdiv{
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+        padding-bottom: 330px;
+        padding-top: 30px;
+    }
+    .mainaboutcontent{
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+        height: 650px;
+    }
+    .abouttextdiv{
+        width: 300px;
+        margin: auto;
+        padding: 0;
+    }
+    .aboutimg{
+        padding: 0;
+        margin: auto;
+        width: 100%;
+        margin-top: 40px;
+        max-height: 300px;
+        border-radius: 10px;
+    }
+    .abouttitle{
+        font-size: 30px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        padding-top: 100px;
+    }
+    .abouttext{
+        font-size: 18px;
+        margin: auto;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+    }
+  }
