@@ -1,25 +1,28 @@
 {
   "files": {
-    "main.css": "/stolarnia/static/css/main.df59f9bd.css",
-    "main.js": "/stolarnia/static/js/main.a9d6ddc2.js",
-    "static/js/787.aa84917f.chunk.js": "/stolarnia/static/js/787.aa84917f.chunk.js",
+    "main.css": "/stolarnia/static/css/main.a5f8fa63.css",
+    "main.js": "/stolarnia/static/js/main.aa79f463.js",
+    "static/js/787.15cb3642.chunk.js": "/stolarnia/static/js/787.15cb3642.chunk.js",
     "static/media/main-page-top-photo.jpg": "/stolarnia/static/media/main-page-top-photo.b0df44c95a7427dcc30f.jpg",
     "static/media/icon3.png": "/stolarnia/static/media/icon3.ea2075495e43fc1659b2.png",
     "static/media/icon1.png": "/stolarnia/static/media/icon1.ae3d99f736fa1baeeb57.png",
     "static/media/icon2.png": "/stolarnia/static/media/icon2.9fd5706c32248816e8b0.png",
-    "static/media/phoneicon.png": "/stolarnia/static/media/phoneicon.b1218c13589237b4a3fc.png",
+    "static/media/logo.png": "/stolarnia/static/media/logo.e31299bbed4d8db2d727.png",
+    "static/media/tiktok.png": "/stolarnia/static/media/tiktok.de1fc4e4f23e6c58699e.png",
+    "static/media/insta.webp": "/stolarnia/static/media/insta.6c5d3392225c849cd07a.webp",
+    "static/media/facebook.webp": "/stolarnia/static/media/facebook.879b0d6add30b5345094.webp",
     "static/media/logo.svg": "/stolarnia/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "static/media/slick.svg": "/stolarnia/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/stolarnia/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/stolarnia/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/stolarnia/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/stolarnia/index.html",
-    "main.df59f9bd.css.map": "/stolarnia/static/css/main.df59f9bd.css.map",
-    "main.a9d6ddc2.js.map": "/stolarnia/static/js/main.a9d6ddc2.js.map",
-    "787.aa84917f.chunk.js.map": "/stolarnia/static/js/787.aa84917f.chunk.js.map"
+    "main.a5f8fa63.css.map": "/stolarnia/static/css/main.a5f8fa63.css.map",
+    "main.aa79f463.js.map": "/stolarnia/static/js/main.aa79f463.js.map",
+    "787.15cb3642.chunk.js.map": "/stolarnia/static/js/787.15cb3642.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df59f9bd.css",
-    "static/js/main.a9d6ddc2.js"
+    "static/css/main.a5f8fa63.css",
+    "static/js/main.aa79f463.js"
   ]
 }
