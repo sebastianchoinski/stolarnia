@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stolarnia/static/css/main.141d5acf.css",
-    "main.js": "/stolarnia/static/js/main.b289a7a9.js",
+    "main.js": "/stolarnia/static/js/main.6540494d.js",
     "static/js/787.15cb3642.chunk.js": "/stolarnia/static/js/787.15cb3642.chunk.js",
     "static/media/main-page-top-photo.jpg": "/stolarnia/static/media/main-page-top-photo.b0df44c95a7427dcc30f.jpg",
     "static/media/icon3.png": "/stolarnia/static/media/icon3.ea2075495e43fc1659b2.png",
@@ -27,11 +27,11 @@
     "static/media/slick.woff": "/stolarnia/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/stolarnia/index.html",
     "main.141d5acf.css.map": "/stolarnia/static/css/main.141d5acf.css.map",
-    "main.b289a7a9.js.map": "/stolarnia/static/js/main.b289a7a9.js.map",
+    "main.6540494d.js.map": "/stolarnia/static/js/main.6540494d.js.map",
     "787.15cb3642.chunk.js.map": "/stolarnia/static/js/787.15cb3642.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.141d5acf.css",
-    "static/js/main.b289a7a9.js"
+    "static/js/main.6540494d.js"
   ]
 }
